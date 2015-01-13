@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22310.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoveShapeDemo", "MoveShapeDemo\MoveShapeDemo.csproj", "{C0059349-5CA2-45B9-8502-939F48883CB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1386BB9A-8BEC-4219-A930-5ED5A3FC8160}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\14.0\EXTENSIONS\WA4PEEX5.OUV\description.html = ..\..\..\..\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\14.0\EXTENSIONS\WA4PEEX5.OUV\description.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0059349-5CA2-45B9-8502-939F48883CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0059349-5CA2-45B9-8502-939F48883CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0059349-5CA2-45B9-8502-939F48883CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0059349-5CA2-45B9-8502-939F48883CB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
