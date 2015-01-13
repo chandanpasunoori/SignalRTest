@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SignalR MoveShape Demo</title>
+    <style>
+        #shape {
+            width: 100px;
+            height: 100px;
+            background-color: #FF0000;
+        }
+    </style>
+
+</head>
+<body>
+    <script src="Scripts/jquery-1.6.4.js"></script>
+    <script src="Scripts/jquery-ui-1.10.2.js"></script>
+    <script src="Scripts/jquery.signalR-1.0.1.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script>
+    $(function () {
+        var moveShapeHub = $.connection.moveShapeHub;
+        moveShapeHub.client.updateShape = function (model) {
+            console.log("model", model);
+            $("#log").prepend(JSON.stringify(model) + "<br>");
+        };
+        moveShapeHub.client.clientClickedShape = function () {
+            console.log("clientClickedShape");
+            $("#log").prepend("clientClickedShape<br>");
+        };
+
+        moveShapeHub.client.clientDoubleClickedShape = function () {
+            console.log("clientDoubleClickedShape");
+            $("#log").prepend("clientDoubleClickedShape<br>");
+        };
+        $.connection.hub.start().done(function () {
+            console.log("SignalR Hub Started<br>");
+        });
+    });
+    </script>
+    <div style="min-width:500px; padding:20px;" id="log" />
+</body>
+</html>
